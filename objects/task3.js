@@ -19,6 +19,12 @@ const userProfile = {
   },
 };
 
-const newUserProfile = JSON.parse(JSON.stringify(userProfile));
+//---------------------1-ый вариант-------------------//
+// const newUserProfile = JSON.parse(JSON.stringify(userProfile));
 
-console.log(newUserProfile);
+// console.log(newUserProfile);
+//---------------------2-ой вариант-------------------//
+
+const copied = structuredClone(userProfile);
+
+console.log(copied);
