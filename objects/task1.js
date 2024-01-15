@@ -21,3 +21,8 @@ console.log(userProfile);
 delete userProfile.work;
 
 console.log(userProfile);
+
+userProfile.firstName = "Dmytro";
+userProfile.age = 32;
+
+console.log(userProfile);
