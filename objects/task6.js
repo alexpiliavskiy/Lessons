@@ -9,7 +9,21 @@ const userProfile = {
   email: "alex.pilyavskiy03@gmail.com",
 };
 ////Метод кторый преобразует объект в массив, всё что нашёл
-const newArray = Object.entries(userProfile);
+// const newArray = Object.entries(userProfile);
 
-console.log(newArray);
-console.log(newArray.length);
+function objToArr(myObject) {
+  const arr = [];
+  for (const values in myObject) {
+    arr.push([values, myObject[values]]);
+  }
+
+  return arr;
+}
+
+console.log(objToArr(userProfile));
+
+function objToArr(obj) {
+  return Object.entries(obj);
+}
+
+console.log(objToArr(userProfile));
