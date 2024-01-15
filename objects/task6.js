@@ -8,7 +8,7 @@ const userProfile = {
   age: 22,
   email: "alex.pilyavskiy03@gmail.com",
 };
-
+////Метод кторый преобразует объект в массив, всё что нашёл
 const newArray = Object.entries(userProfile);
 
 console.log(newArray);
