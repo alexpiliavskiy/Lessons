@@ -9,12 +9,20 @@ const userProfile = {
   email: "alex.pilyavskiy03@gmail.com",
 };
 
-for (let key in userProfile) {
-  console.log(key + ": " + userProfile[key]);
-}
-//-----------------------------------------------//
-const valuesObject = Object.keys(userProfile);
+// for (let key in userProfile) {
+//   console.log(key + ": " + userProfile[key]);
+// }
+// //-----------------------------------------------//
+// const valuesObject = Object.keys(userProfile);
 
-valuesObject.forEach((key) => {
-  console.log(`${key} : ${userProfile[key]}`);
-});
+// valuesObject.forEach((key) => {
+//   console.log(`${key} : ${userProfile[key]}`);
+// });
+// //-----------------------------------------------//
+function logObject(obj) {
+  for (let key in obj) {
+    console.log(key + ": " + obj[key]);
+  }
+}
+
+logObject(userProfile);
