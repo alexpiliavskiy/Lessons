@@ -30,6 +30,10 @@ const personInfo = [
   },
 ];
 
-const addedPersonInfo = (addValue) => {
-  return;
-};
+const newAge = 8;
+
+const addedPersonInfo = personInfo.map((person) => {
+  return { ...person, age: 8 };
+});
+
+console.log(addedPersonInfo);
