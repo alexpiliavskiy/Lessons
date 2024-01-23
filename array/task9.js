@@ -2,3 +2,5 @@
 массив, содержащий только уникальные
  элементы исходного массива.
  */
+
+const names = ["Oleksandr", "Dmytro", "Elena", "Ekaterina"];
